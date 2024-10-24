@@ -192,3 +192,35 @@ footer textarea {
     margin-bottom: 24px;
     border: none;
 }
+
+/* responsive media query  */
+.hide{display: none;}
+@media screen and (max-width:576px) {
+    .skills-container{flex-direction: column;}
+    .resume-container{flex-direction: column;}
+    footer {
+        padding: 20px;
+      flex-direction: column;
+        gap: 10px;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    footer input[type="text"],
+footer input[type="email"],
+footer textarea {
+   width: calc( (100% - 40px));
+}
+.about {
+    border-radius: 10px;
+    padding:15px;
+    text-align: center;
+}
+.about-items {
+  
+    flex-direction: column;
+}
+main section {
+   margin: 10px;
+}
+}
